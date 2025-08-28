@@ -1,0 +1,15 @@
+{
+  "name": "auto-user-assign",
+  "version": "1.0.0",
+  "description": "Forge app to automatically assign users to Jira roles",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "echo No build step needed",
+    "deploy": "forge deploy",
+    "install": "forge install"
+  },
+  "dependencies": {
+    "@forge/api": "^2.10.0",
+    "@forge/resolver": "^2.10.0"
+  }
+}

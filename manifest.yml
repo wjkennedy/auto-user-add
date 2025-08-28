@@ -1,0 +1,19 @@
+modules:
+  trigger:
+    - key: auto-user-assign-trigger
+      function: handler
+      events:
+        - avi:jira:created:issue
+  function:
+    - key: handler
+      handler: index.handler
+
+permissions:
+  scopes:
+    - manage:jira-configuration
+    - read:jira-user
+    - write:jira-work
+
+app:
+  runtime:
+    name: nodejs22.x
